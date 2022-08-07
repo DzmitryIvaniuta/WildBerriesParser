@@ -14,7 +14,7 @@ public static class Program
         {
             Console.WriteLine("Parsing started...");
             
-            var filePath = Path.Combine(Environment.CurrentDirectory, $"Test-{DateTime.Now:yyyyMMddHHmmss}.xlsx");
+            var filePath = Path.Combine(Environment.CurrentDirectory, $"WbCards-{DateTime.Now:yyyyMMddHHmmss}.xlsx");
             var keyPath = Path.Combine(Environment.CurrentDirectory, "Keys.txt");
             var keys = await GetSearchKeysAsync(keyPath);
             
